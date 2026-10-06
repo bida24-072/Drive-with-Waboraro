@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Guide | Drive With Waboraro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .guide-page { max-width: 900px; margin: 40px auto 80px; background: white; padding: 60px 70px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+        .guide-header { text-align: center; padding-bottom: 40px; border-bottom: 2px solid var(--border); margin-bottom: 40px; }
+        .guide-header h1 { font-size: 2.4rem; font-weight: 800; color: var(--charcoal); margin-bottom: 12px; letter-spacing: -0.03em; }
+        .guide-header p { color: var(--grey); font-size: 1.05rem; }
+        .guide-header .guide-brand { display: inline-flex; align-items: center; gap: 10px; background: var(--sky-pale); color: var(--sky); padding: 8px 18px; border-radius: 40px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 24px; }
+        .guide-section { margin-bottom: 50px; }
+        .guide-section h2 { font-size: 1.5rem; font-weight: 800; color: var(--sky); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 3px solid var(--sky); letter-spacing: -0.02em; }
+        .guide-section h3 { font-size: 1.1rem; font-weight: 700; margin: 24px 0 12px; color: var(--charcoal); }
+        .guide-section p, .guide-section li { font-size: 0.95rem; line-height: 1.75; color: var(--charcoal); }
+        .guide-section ul { padding-left: 20px; margin-bottom: 16px; }
+        .guide-section ul li { margin-bottom: 8px; list-style: disc; }
+        .guide-section ol { padding-left: 22px; margin-bottom: 16px; }
+        .guide-section ol li { margin-bottom: 8px; list-style: decimal; }
+        .guide-section strong { color: var(--sky); font-weight: 700; }
+        .sign-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 0.9rem; }
+        .sign-table th { background: var(--sky); color: white; padding: 12px 16px; text-align: left; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase; }
+        .sign-table td { padding: 14px 16px; border-bottom: 1px solid var(--border); vertical-align: top; }
+        .sign-table tr:nth-child(even) td { background: var(--cream); }
+        .guide-tip { background: linear-gradient(135deg, var(--yellow), var(--yellow-dark)); padding: 24px 28px; border-radius: 14px; color: var(--charcoal); margin: 24px 0; display: flex; gap: 16px; align-items: flex-start; }
+        .guide-tip i { font-size: 1.5rem; flex-shrink: 0; margin-top: 2px; }
+        .guide-tip p { font-size: 0.95rem; line-height: 1.7; margin: 0; }
+        .guide-print-btn { position: fixed; top: 100px; right: 30px; z-index: 100; background: var(--sky); color: white; padding: 14px 24px; border-radius: 40px; font-weight: 700; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; box-shadow: 0 10px 30px rgba(2, 132, 199, 0.3); cursor: pointer; border: none; transition: all 0.3s ease; text-decoration: none; }
+        .guide-print-btn:hover { background: #026FA1; transform: translateY(-2px); }
+        @media (max-width: 700px) { .guide-page { padding: 40px 24px; margin: 20px 16px; } .guide-header h1 { font-size: 1.8rem; } .guide-print-btn { position: static; margin: 20px auto 0; width: fit-content; } }
+        @media print { .top-strip, header, footer, .wa-float, .guide-print-btn { display: none !important; } body { background: white; } .guide-page { box-shadow: none; margin: 0; padding: 20px; max-width: 100%; border-radius: 0; } .guide-section h2 { color: #0284C7; page-break-after: avoid; } .guide-section { page-break-inside: avoid; } .sign-table { page-break-inside: avoid; } .guide-tip { background: #FEF3C7; } }
+    </style>
+</head>
+<body>
+
+    <a href="#" onclick="window.print(); return false;" class="guide-print-btn">
+        <i class="fas fa-print"></i> Print / Save as PDF
+    </a>
+
+    <div class="guide-page">
+
+        <div class="guide-header">
+            <div class="guide-brand">
+                <i class="fas fa-car"></i> Drive with Waboraro
+            </div>
+            <h1>Theory Test Study Guide</h1>
+            <p>Your complete revision companion — road signs, rules, and test-day tips.</p>
+        </div>
+
+        <div class="guide-section">
+            <h2>1. Road Signs — Warning Signs</h2>
+            <p>Warning signs are <strong>yellow diamonds</strong>. They alert you to hazards ahead. Slow down and be ready to react.</p>
+            <table class="sign-table">
+                <tr><th>Sign</th><th>Meaning</th><th>How to React</th></tr>
+                <tr><td>⚠️ Pedestrian Crossing</td><td>Pedestrians crossing ahead</td><td>Slow down, be ready to stop</td></tr>
+                <tr><td>⚠️ Sharp Bend</td><td>Road curves sharply</td><td>Reduce speed before the bend</td></tr>
+                <tr><td>⚠️ Slippery Road</td><td>Surface may be slippery</td><td>Increase following distance</td></tr>
+                <tr><td>⚠️ Narrow Bridge</td><td>Bridge narrower than road</td><td>Slow down, check oncoming traffic</td></tr>
+                <tr><td>⚠️ School Zone</td><td>Children may be crossing</td><td>Reduce speed to 30 km/h</td></tr>
+            </table>
+        </div>
+
+        <div class="guide-section">
+            <h2>2. Road Signs — Regulatory Signs</h2>
+            <p>Regulatory signs tell you what you <strong>must</strong> or <strong>must not</strong> do. Ignoring them is an offence.</p>
+            <table class="sign-table">
+                <tr><th>Sign</th><th>Meaning</th><th>What to Do</th></tr>
+                <tr><td>🛑 Stop</td><td>Complete stop required</td><td>Stop fully, check, then proceed</td></tr>
+                <tr><td>⛔ No Entry</td><td>Do not enter</td><td>Find another route</td></tr>
+                <tr><td>🔴 Speed Limit</td><td>Maximum speed</td><td>Do not exceed the number shown</td></tr>
+                <tr><td>⚠️ Yield</td><td>Give way</td><td>Let other traffic go first</td></tr>
+                <tr><td>🚫 No Parking</td><td>Parking prohibited</td><td>Do not stop or park</td></tr>
+                <tr><td>🚫 No Overtaking</td><td>Overtaking prohibited</td><td>Stay in lane until sign ends</td></tr>
+            </table>
+        </div>
+
+        <div class="guide-section">
+            <h2>3. Right of Way Rules</h2>
+            <h3>At a Four-Way Stop</h3>
+            <ol>
+                <li>First vehicle to arrive and stop has right of way</li>
+                <li>If two arrive at the same time — yield to the vehicle on your right</li>
+                <li>Never assume — make eye contact before proceeding</li>
+            </ol>
+            <h3>At a Roundabout</h3>
+            <ol>
+                <li>Give way to traffic already in the roundabout</li>
+                <li>Signal left when exiting</li>
+                <li>Do not change lanes inside the roundabout</li>
+            </ol>
+            <h3>At an Unmarked Intersection</h3>
+            <ol>
+                <li>Yield to vehicles on your right</li>
+                <li>Yield to vehicles already in the intersection</li>
+                <li>Yield to pedestrians crossing</li>
+            </ol>
+        </div>
+
+        <div class="guide-section">
+            <h2>4. Speed Limits in Botswana</h2>
+            <table class="sign-table">
+                <tr><th>Road Type</th><th>Speed Limit</th></tr>
+                <tr><td>Residential / Built-up areas</td><td>60 km/h</td></tr>
+                <tr><td>Rural roads</td><td>80 km/h</td></tr>
+                <tr><td>Main highways</td><td>120 km/h</td></tr>
+                <tr><td>School zones</td><td>30 km/h</td></tr>
+                <tr><td>Near hospitals</td><td>40 km/h</td></tr>
+            </table>
+            <div class="guide-tip">
+                <i class="fas fa-lightbulb"></i>
+                <p><strong>Test Tip:</strong> Always watch for signs that override the default limit. If a sign says 40 km/h in a residential area, that limit applies — not the general 60 km/h.</p>
+            </div>
+        </div>
+
+        <div class="guide-section">
+            <h2>5. Vehicle Controls</h2>
+            <h3>Foot Controls</h3>
+            <ul>
+                <li><strong>Accelerator (right pedal):</strong> Increases speed</li>
+                <li><strong>Brake (middle pedal):</strong> Slows or stops the vehicle</li>
+                <li><strong>Clutch (left pedal — manual only):</strong> Used when changing gears</li>
+            </ul>
+            <h3>Hand Controls</h3>
+            <ul>
+                <li><strong>Gear lever:</strong> Selects forward, reverse, or neutral</li>
+                <li><strong>Handbrake:</strong> Keeps the car stationary when parked</li>
+                <li><strong>Indicators:</strong> Signal before turning or changing lanes (30m in advance)</li>
+                <li><strong>Wipers:</strong> Clear rain from windshield</li>
+                <li><strong>Hazard lights:</strong> Alert other drivers of danger</li>
+            </ul>
+        </div>
+
+        <div class="guide-section">
+            <h2>6. Safety & Emergency Procedures</h2>
+            <h3>If Your Brakes Fail</h3>
+            <ol>
+                <li>Pump the brake pedal rapidly</li>
+                <li>Change to a lower gear to slow down</li>
+                <li>Use the handbrake gently — do not yank it</li>
+                <li>Look for a safe place to stop (grass, gravel)</li>
+            </ol>
+            <h3>If You Have a Tyre Blowout</h3>
+            <ol>
+                <li>Grip the steering wheel firmly</li>
+                <li>Do NOT brake suddenly</li>
+                <li>Ease off the accelerator</li>
+                <li>Let the car slow naturally</li>
+                <li>Pull off the road when safe</li>
+            </ol>
+            <h3>At an Accident Scene</h3>
+            <ol>
+                <li>Stop if involved — it is the law</li>
+                <li>Turn on hazard lights</li>
+                <li>Check for injuries</li>
+                <li>Call emergency services (997 police, 998 ambulance)</li>
+                <li>Exchange details with other drivers</li>
+                <li>Do not admit fault — let insurers decide</li>
+            </ol>
+        </div>
+
+        <div class="guide-section">
+            <h2>7. Test Day Tips</h2>
+            <h3>What to Bring</h3>
+            <ul>
+                <li>Valid Omang (national ID) or passport</li>
+                <li>Proof of application / booking reference</li>
+                <li>A pen (in case you need to sign documents)</li>
+                <li>Prescription glasses if you wear them for driving</li>
+            </ul>
+            <h3>The Night Before</h3>
+            <ul>
+                <li>Get a full night's sleep — do not cram</li>
+                <li>Review the road signs one more time</li>
+                <li>Eat a proper breakfast — hunger affects focus</li>
+                <li>Plan your route to the test centre</li>
+            </ul>
+            <h3>During the Test</h3>
+            <ul>
+                <li>Read every question twice before answering</li>
+                <li>Answer the easy questions first — do not get stuck</li>
+                <li>If unsure, eliminate obviously wrong answers</li>
+                <li>Trust your first instinct — do not second-guess</li>
+                <li>Do not rush — you have time</li>
+            </ul>
+            <div class="guide-tip">
+                <i class="fas fa-heart"></i>
+                <p><strong>Remember:</strong> This is just a test. If you do not pass the first time, it is not the end of the world. Many of my students passed on their second attempt. Stay calm, study consistently, and you will get there.</p>
+            </div>
+        </div>
+
+        <div class="guide-section" style="text-align: center; border-top: 2px solid var(--border); padding-top: 40px;">
+            <h2 style="border: none; font-size: 1.8rem;">Ready to pass?</h2>
+            <p style="max-width: 600px; margin: 0 auto 20px;">Join over 1,200 students who've used these exact methods to pass their Botswana driving theory test.</p>
+            <p style="font-size: 0.9rem; color: var(--grey);">
+                <strong>Waboraro</strong> · Lobatse, Botswana<br>
+                WhatsApp: +267 71 234 567 · TikTok: @waboraro_drives
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom" style="border: none; padding-top: 0;">
+                <span>© 2026 Drive With Waboraro</span>
+                <span>Made in Botswana 🇧🇼</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
