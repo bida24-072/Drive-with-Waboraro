@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive With Waboraro | Pass Your Botswana Driving Theory Test</title>
+    <meta name="description" content="Learn driving theory the easy way. Waboraro teaches Motswana students how to pass the Botswana driving licence theory test — from Lobatse, for everyone.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:ital,wght@1,400&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-strip">
+        <i class="fas fa-graduation-cap"></i> Over 1,000 students taught · 95% pass rate
+    </div>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-mark"><i class="fas fa-car"></i></div>
+                <div class="logo-text">
+                    Waboraro
+                    <small>DRIVING THEORY COACH</small>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="lessons.html">Lessons</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="road-signs.html">Road Signs</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="nav-cta">
+                <i class="fas fa-whatsapp"></i> Start Learning
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- VIDEO HERO -->
+        <section class="video-hero">
+            <div class="video-hero-poster" style="background-image: url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');"></div>
+
+            <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80">
+                <source src="https://videos.pexels.com/video-files/854745/854745-hd_1920_1080_25fps.mp4" type="video/mp4">
+                <source src="https://videos.pexels.com/video-files/3130284/3130284-uhd_2560_1440_30fps.mp4" type="video/mp4">
+                <source src="https://videos.pexels.com/video-files/2169880/2169880-uhd_2560_1440_30fps.mp4" type="video/mp4">
+            </video>
+
+            <div class="video-hero-overlay"></div>
+
+            <div class="video-hero-content">
+                <div class="video-hero-badge">
+                    <span class="dot"></span>
+                    Now enrolling · Lobatse & Online
+                </div>
+                <h1>Pass your <span>driving theory</span> the first time.</h1>
+                <p>I'm Waboraro. I've helped over 1,000 Motswana students understand driving theory — not just memorise it. Join me online, on TikTok, or in person in Lobatse.</p>
+                <div class="video-hero-actions">
+                    <a href="quiz.html" class="btn btn-yellow">
+                        Take Free Practice Test <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="lessons.html" class="btn btn-white">
+                        Browse Lessons
+                    </a>
+                </div>
+            </div>
+
+            <button class="video-hero-toggle" aria-label="Toggle sound">
+                <i class="fas fa-volume-mute"></i>
+            </button>
+        </section>
+
+        <!-- HERO STATS -->
+        <section style="background: white; padding: 40px 0; border-bottom: 1px solid var(--border);">
+            <div class="container">
+                <div class="hero-stats" style="justify-content: center; gap: 60px; padding-top: 0; border: none; text-align: center;">
+                    <div class="stat-block">
+                        <div class="num">1,200+</div>
+                        <div class="lbl">Students taught</div>
+                    </div>
+                    <div class="stat-block">
+                        <div class="num">95%</div>
+                        <div class="lbl">Pass rate</div>
+                    </div>
+                    <div class="stat-block">
+                        <div class="num">500K+</div>
+                        <div class="lbl">TikTok views</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUIZ PREVIEW -->
+        <section class="quiz-preview">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow"><i class="fas fa-bolt"></i> Try it now — no signup</span>
+                    <h2 class="section-title">Take a real question from the test</h2>
+                    <p class="section-sub">This is exactly how my lessons work — clear questions, instant feedback, and the reasoning behind every answer.</p>
+                </div>
+
+                <div class="quiz-card" id="home-quiz">
+                    <div class="quiz-meta">
+                        <span id="preview-num">Question 1 of 10</span>
+                        <span>⚡ Live Preview</span>
+                    </div>
+                    <div class="quiz-progress">
+                        <div class="quiz-progress-fill" id="preview-progress"></div>
+                    </div>
+                    <div class="quiz-question" id="preview-question"></div>
+                    <div class="quiz-options" id="preview-options"></div>
+                    <div class="quiz-feedback" id="preview-feedback"></div>
+                    <button class="quiz-next" id="preview-next" onclick="nextPreviewQuestion()">
+                        Next Question <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="quiz.html" class="btn">Take the Full 10-Question Test <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOPICS -->
+        <section class="topics">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow"><i class="fas fa-book"></i> What you'll learn</span>
+                    <h2 class="section-title">Everything the test covers</h2>
+                    <p class="section-sub">Broken down into simple lessons you can review on your phone — anytime, anywhere.</p>
+                </div>
+
+                <div class="topics-grid">
+                    <div class="topic-card" onclick="window.location.href='road-signs.html'">
+                        <div class="topic-icon"><i class="fas fa-traffic-light"></i></div>
+                        <h3>Road Signs</h3>
+                        <p>Warning signs, regulatory signs, and information signs — with pictures so you never forget.</p>
+                        <span class="topic-link">Learn signs <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                    <div class="topic-card yellow">
+                        <div class="topic-icon"><i class="fas fa-road"></i></div>
+                        <h3>Rules of the Road</h3>
+                        <p>Right of way, speed limits, overtaking, and parking rules — explained in plain English.</p>
+                        <span class="topic-link">Study rules <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                    <div class="topic-card orange">
+                        <div class="topic-icon"><i class="fas fa-car-side"></i></div>
+                        <h3>Vehicle Controls</h3>
+                        <p>What every pedal, lever, and button does — and when to use them safely.</p>
+                        <span class="topic-link">Learn controls <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                    <div class="topic-card green">
+                        <div class="topic-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Safety & Emergencies</h3>
+                        <p>What to do in an accident, breakdown, or emergency — the questions examiners love.</p>
+                        <span class="topic-link">Review safety <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                    <div class="topic-card purple">
+                        <div class="topic-icon"><i class="fas fa-user-check"></i></div>
+                        <h3>Test Day Tips</h3>
+                        <p>How the Botswana theory test works, what to bring, and how to stay calm.</p>
+                        <span class="topic-link">Get prepared <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                    <div class="topic-card red">
+                        <div class="topic-icon"><i class="fas fa-question-circle"></i></div>
+                        <h3>Practice Quizzes</h3>
+                        <p>Test yourself with real exam-style questions. Feedback after every answer.</p>
+                        <span class="topic-link">Take a quiz <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED TESTIMONIALS -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow"><i class="fas fa-star"></i> Real reviews from real students</span>
+                    <h2 class="section-title">They passed. You can too.</h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"I failed my theory test twice before finding Waboraro. His teaching style is so simple — I passed on my third try with 92%. Forever grateful!"</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar" style="background-image: url('https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80');"></div>
+                            <div>
+                                <div class="testimonial-name">Kefilwe M.</div>
+                                <div class="testimonial-location">Lobatse</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Found him on TikTok and never looked back. His road signs videos are the best on the platform. Passed first try — highly recommend!"</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80');"></div>
+                            <div>
+                                <div class="testimonial-name">Thabo S.</div>
+                                <div class="testimonial-location">Gaborone</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"The way Waboraro explains things — you don't just memorise, you actually understand. I now feel confident on the road too."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar" style="background-image: url('https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80');"></div>
+                            <div>
+                                <div class="testimonial-name">Naledi P.</div>
+                                <div class="testimonial-location">Kanye</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIKTOK TESTIMONIAL WALL -->
+        <section class="testimonial-wall">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow"><i class="fab fa-tiktok"></i> From the comments</span>
+                    <h2 class="section-title">What students are saying online</h2>
+                    <p class="section-sub">Real comments from TikTok, Instagram, and Facebook — from students who passed with Waboraro.</p>
+                </div>
+
+                <div class="wall-grid" id="testimonial-wall"></div>
+
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="https://tiktok.com" target="_blank" class="btn">
+                        <i class="fab fa-tiktok"></i> Follow on TikTok
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOCIAL MEDIA FEED -->
+        <section class="social-feed">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow"><i class="fas fa-play-circle"></i> Latest Videos</span>
+                    <h2 class="section-title">Free lessons, daily</h2>
+                    <p class="section-sub">Short, sharp videos that teach driving theory in under 60 seconds.</p>
+                </div>
+
+                <div class="feed-grid" id="social-feed-grid"></div>
+
+                <div class="feed-cta">
+                    <a href="https://tiktok.com" target="_blank" class="btn btn-outline">
+                        View All Videos <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- STUDY GUIDE -->
+        <section class="study-guide">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow"><i class="fas fa-download"></i> Free Resource</span>
+                    <h2 class="section-title">Get the full study guide</h2>
+                    <p class="section-sub">Everything you need to revise — road signs, rules, and test tips — in one printable document.</p>
+                </div>
+
+                <div class="guide-card">
+                    <div class="guide-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="guide-content">
+                        <h3>Waboraro's Theory Test Study Guide</h3>
+                        <p>The complete revision pack — 24 road signs, all the key rules, and Waboraro's personal test-day tips. Print it, share it, study it anywhere.</p>
+                        <div class="guide-meta">
+                            <i class="fas fa-file-alt"></i> 18 pages · <i class="fas fa-clock"></i> 30 min read · <i class="fas fa-check-circle"></i> Free forever
+                        </div>
+                    </div>
+                    <div class="guide-action">
+                        <a href="study-guide.html" class="btn btn-yellow" target="_blank">
+                            <i class="fas fa-print"></i> Print / Save PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-banner">
+            <h2>Ready to pass your theory test?</h2>
+            <p>Start with the free practice quiz, then join a lesson or enrol in a full course. I'll guide you from question one to pass day.</p>
+            <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; position: relative;">
+                <a href="quiz.html" class="btn btn-white">Take the Free Test <i class="fas fa-arrow-right"></i></a>
+                <a href="pricing.html" class="btn" style="background: var(--charcoal);">See Pricing</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>Drive With <span>Waboraro</span></h3>
+                    <p>Botswana driving theory, taught simply. From Lobatse — for everyone, everywhere.</p>
+                    <div class="footer-socials">
+                        <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/26771234567"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="lessons.html">Free Lessons</a></li>
+                        <li><a href="quiz.html">Practice Quiz</a></li>
+                        <li><a href="road-signs.html">Road Signs</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Waboraro</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="study-guide.html">Study Guide</a></li>
+                        <li><a href="#">TikTok</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Lobatse, Botswana</li>
+                        <li>+267 71 234 567</li>
+                        <li>hello@waboraro.co.bw</li>
+                        <li>Mon–Sat · 8AM–7PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Drive With Waboraro</span>
+                <span>Made in Botswana 🇧🇼</span>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/26771234567" class="wa-float" target="_blank" aria-label="WhatsApp Waboraro">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>
